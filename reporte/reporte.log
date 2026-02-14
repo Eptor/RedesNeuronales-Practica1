@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  7 FEB 2026 00:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  13 FEB 2026 16:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -305,25 +305,24 @@ Overfull \hbox (24.78146pt too wide) in paragraph at lines 139--151
  [] 
  []
 
-<images/relevant_features.png, id=15, 1040.688pt x 586.1097pt>
-File: images/relevant_features.png Graphic file (type png)
-<use images/relevant_features.png>
-Package pdftex.def Info: images/relevant_features.png  used on input line 159.
-(pdftex.def)             Requested size: 252.0pt x 141.92125pt.
-<images/confusion.png, id=17, 1040.688pt x 586.1097pt>
+<images/pca_scatter.png, id=15, 578.16pt x 433.62pt>
+File: images/pca_scatter.png Graphic file (type png)
+<use images/pca_scatter.png>
+Package pdftex.def Info: images/pca_scatter.png  used on input line 178.
+(pdftex.def)             Requested size: 226.79846pt x 170.09697pt.
+<images/confusion.png, id=17, 1040.688pt x 361.35pt>
 File: images/confusion.png Graphic file (type png)
 <use images/confusion.png>
-Package pdftex.def Info: images/confusion.png  used on input line 173.
-(pdftex.def)             Requested size: 252.0pt x 141.92125pt.
-
-
-[2 <./images/relevant_features.png>]
-<images/metrics.png, id=25, 1040.688pt x 586.1097pt>
+Package pdftex.def Info: images/confusion.png  used on input line 188.
+(pdftex.def)             Requested size: 252.0pt x 87.4977pt.
+<images/metrics.png, id=18, 1040.688pt x 586.1097pt>
 File: images/metrics.png Graphic file (type png)
 <use images/metrics.png>
-Package pdftex.def Info: images/metrics.png  used on input line 188.
+Package pdftex.def Info: images/metrics.png  used on input line 203.
 (pdftex.def)             Requested size: 252.0pt x 141.92125pt.
 
+
+[2]
 
 
 ** Conference Paper **
@@ -338,22 +337,22 @@ Before submitting the final camera ready copy, remember to:
 
 
 
-[3 <./images/confusion.png> <./images/metrics.png>] (./reporte.aux)
+[3 <./images/pca_scatter.png> <./images/confusion.png> <./images/metrics.png>] (./reporte.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4231 strings out of 473190
- 66657 string characters out of 5715801
- 479754 words of memory out of 5000000
- 27448 multiletter control sequences out of 15000+600000
+ 4233 strings out of 473190
+ 66667 string characters out of 5715801
+ 483754 words of memory out of 5000000
+ 27450 multiletter control sequences out of 15000+600000
  596970 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,9n,65p,769b,286s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on reporte.pdf (3 pages, 309381 bytes).
+Output written on reporte.pdf (3 pages, 414251 bytes).
 PDF statistics:
  82 PDF objects out of 1000 (max. 8388607)
  46 compressed objects within 1 object stream

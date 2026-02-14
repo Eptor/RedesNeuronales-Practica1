@@ -140,11 +140,11 @@ Los tres algoritmos fueron evaluados utilizando las métricas de exactitud, prec
 \hline
 \textbf{Modelo} & \textbf{Exactitud} & \textbf{Precisión} & \textbf{Sensibilidad} & \textbf{Especificidad} \\
 \hline
-Regresión Logística & 0.965 & 0.957 & 0.975 & 0.950 \\
+Regresión Logística & 0.9737 & 0.9762 & 0.9535 & 0.9859 \\
 \hline
-Random Forest & 0.977 & 0.973 & 0.982 & 0.971 \\
+Random Forest & 0.9649 & 0.9756 & 0.9302 & 0.9859 \\
 \hline
-SVM (Linear) & 0.965 & 0.957 & 0.975 & 0.950 \\
+SVM (Linear) & 0.9561 & 0.9318 & 0.9535 & 0.9577 \\
 \hline
 \end{tabular}
 \label{tab:metrics}
@@ -152,18 +152,33 @@ SVM (Linear) & 0.965 & 0.957 & 0.975 & 0.950 \\
 \end{table}
 
 \subsection{Visualización de Características}
+Las características más y menos relevantes según el Fisher Score fueron identificadas para analizar el poder discriminativo de las variables (se muestran listas con las 4 mejores y las 4 peores características).
 
-Las características más relevantes según el Fisher Score fueron identificadas y visualizadas en histogramas. Estas características muestran una clara separación entre tumores benignos y malignos, lo que indica que son altamente discriminativas para el problema de clasificación.
+Las 4 características más relevantes según el criterio de Fisher:
+\begin{itemize}
+    \item symmetry2 (Fisher Score: 1.5181)
+    \item compactness1 (Fisher Score: 1.5197)
+    \item radius3 (Fisher Score: 1.5837)
+    \item compactness3 (Fisher Score: 1.7009)
+\end{itemize}
 
-\begin{figure}[htbp]
-\centerline{\includegraphics[width=\linewidth]{images/relevant_features.png}}
-\caption{Histogramas de las características más relevantes según Fisher Score.}
-\label{fig:relevant_features}
-\end{figure}
+Las 4 características menos relevantes según el criterio de Fisher:
+\begin{itemize}
+    \item concavity2 (Fisher Score: 0.0000)
+    \item symmetry1 (Fisher Score: 0.0001)
+    \item concave\_points1 (Fisher Score: 0.0002)
+    \item perimeter2 (Fisher Score: 0.0045)
+\end{itemize}
 
 \subsection{Visualización en 2D}
 
 Mediante el análisis de componentes principales (PCA), los datos fueron proyectados a dos dimensiones. La visualización muestra una buena separación entre las dos clases, aunque con ligero solapamiento, lo que es esperado en problemas reales.
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=0.9\linewidth]{images/pca_scatter.png}}
+\caption{Proyección PCA 2D — dispersión de las muestras por clase (Benigno vs Maligno).}
+\label{fig:pca_scatter}
+\end{figure}
 
 \subsection{Matrices de Confusión}
 

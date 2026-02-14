@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1770452318.13238 "/Users/hectorespinoza/Documents/uabc/redes_neuronales/Practica_1/reporte/reporte.tex" "reporte.pdf" "reporte" 1770452318.79323 0
-  "/Users/hectorespinoza/Documents/uabc/redes_neuronales/Practica_1/reporte/reporte.tex" 1770452317.21172 13216 bd31a958c84dc17c46e97161c577f9b7 ""
+["pdflatex"] 1771030414.89751 "/Users/hectorespinoza/Documents/uabc/redes_neuronales/Practica_1/reporte/reporte.tex" "reporte.pdf" "reporte" 1771030415.63485 0
+  "/Users/hectorespinoza/Documents/uabc/redes_neuronales/Practica_1/reporte/reporte.tex" 1771030414.68213 13717 17237e2e2d2dfd1f985b7619473aa273 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -75,11 +75,11 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1759620374 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "images/confusion.png" 1770452073.94458 36586 5dbddda06e49800d89af387632540da9 ""
+  "images/confusion.png" 1771029520.68584 43824 fb1d95fbb75277cd697b191c96f48a48 ""
   "images/metrics.png" 1770452102.443 36290 290a5c55728a6c4cfd050ba444e40d48 ""
-  "images/relevant_features.png" 1770452039.27176 105699 81c0d764ff4c9793e6a941ec4444f993 ""
-  "reporte.aux" 1770452318.73945 3848 931779c9ebc7338813ebb7d1c011b268 "pdflatex"
-  "reporte.tex" 1770452317.21172 13216 bd31a958c84dc17c46e97161c577f9b7 ""
+  "images/pca_scatter.png" 1771029666.43446 246517 7d65398a678f0aa333131a3a6f37bf3b ""
+  "reporte.aux" 1771030415.57916 3852 ae2948e407659e2ea1c31e844f37239b "pdflatex"
+  "reporte.tex" 1771030414.68213 13717 17237e2e2d2dfd1f985b7619473aa273 ""
   (generated)
   "reporte.aux"
   "reporte.log"

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  13 FEB 2026 16:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  20 FEB 2026 17:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -235,20 +235,20 @@ File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 ) (./reporte.aux)
 \openout1 = `reporte.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
 
 -- Lines per column: 56 (exact).
 (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -271,15 +271,15 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 51.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 53.
 (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 51.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 53.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 1478) in paragraph at lines 57--58
+Underfull \hbox (badness 1478) in paragraph at lines 59--60
 \OT1/ptm/m/n/10 apren-dizaje con-junto (en-sem-ble) que con-struye m[]ultiples
  []
 
@@ -289,41 +289,57 @@ Underfull \hbox (badness 1478) in paragraph at lines 57--58
 
 
 ]
-Overfull \hbox (24.92693pt too wide) in paragraph at lines 116--117
-[]\OT1/ptm/m/n/10 Regresi[]on Log[]^^Pstica (sklearn.linear[]model.LogisticRegression) 
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 121.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+
+
+Underfull \hbox (badness 2772) in paragraph at lines 123--124
+\OT1/ptm/m/n/10 en-sam-blado de 100 []arboles de de-cisi[]on con-stru-i-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--118
-[]\OT1/ptm/m/n/10 Random For-est con 100 es-ti-madores
+Underfull \hbox (badness 1845) in paragraph at lines 123--124
+\OT1/ptm/m/n/10 dos por muestreo boot-strap. Para re-ducir la var-i-
  []
 
 
-
-
-Overfull \hbox (24.78146pt too wide) in paragraph at lines 139--151
- [] 
+Underfull \hbox (badness 1430) in paragraph at lines 123--124
+\OT1/ptm/m/n/10 anza y evi-tar so-brea-juste se ex-plo-raron los hiper-
  []
 
-<images/pca_scatter.png, id=15, 578.16pt x 433.62pt>
-File: images/pca_scatter.png Graphic file (type png)
-<use images/pca_scatter.png>
-Package pdftex.def Info: images/pca_scatter.png  used on input line 178.
-(pdftex.def)             Requested size: 226.79846pt x 170.09697pt.
-<images/confusion.png, id=17, 1040.688pt x 361.35pt>
-File: images/confusion.png Graphic file (type png)
-<use images/confusion.png>
-Package pdftex.def Info: images/confusion.png  used on input line 188.
-(pdftex.def)             Requested size: 252.0pt x 87.4977pt.
-<images/metrics.png, id=18, 1040.688pt x 586.1097pt>
-File: images/metrics.png Graphic file (type png)
-<use images/metrics.png>
-Package pdftex.def Info: images/metrics.png  used on input line 203.
-(pdftex.def)             Requested size: 252.0pt x 141.92125pt.
+
+Underfull \hbox (badness 3872) in paragraph at lines 123--124
+\OT1/ptm/m/n/10 par[]ametros \OT1/pcr/m/n/10 max_depth\OT1/ptm/m/n/10 , \OT1/pcr/m/n/10 min_samples_leaf \OT1/ptm/m/n/10 y
+ []
+
+
+Underfull \vbox (badness 1062) has occurred while \output is active []
+
 
 
 [2]
+<images/pca_scatter.png, id=22, 578.16pt x 433.62pt>
+File: images/pca_scatter.png Graphic file (type png)
+<use images/pca_scatter.png>
+Package pdftex.def Info: images/pca_scatter.png  used on input line 189.
+(pdftex.def)             Requested size: 226.79846pt x 170.09697pt.
+<images/confusion.png, id=24, 1040.688pt x 361.35pt>
+File: images/confusion.png Graphic file (type png)
+<use images/confusion.png>
+Package pdftex.def Info: images/confusion.png  used on input line 199.
+(pdftex.def)             Requested size: 516.0pt x 179.17482pt.
 
+
+<images/metrics.png, id=25, 1040.688pt x 586.1097pt>
+File: images/metrics.png Graphic file (type png)
+<use images/metrics.png>
+Package pdftex.def Info: images/metrics.png  used on input line 214.
+(pdftex.def)             Requested size: 516.0pt x 290.62155pt.
+
+
+[3 <./images/pca_scatter.png>] [4 <./images/confusion.png> <./images/metrics.png>]
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -337,25 +353,29 @@ Before submitting the final camera ready copy, remember to:
 
 
 
-[3 <./images/pca_scatter.png> <./images/confusion.png> <./images/metrics.png>] (./reporte.aux)
+
+
+[5
+
+] (./reporte.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4233 strings out of 473190
- 66667 string characters out of 5715801
- 483754 words of memory out of 5000000
- 27450 multiletter control sequences out of 15000+600000
- 596970 words of font info for 108 fonts, out of 8000000 for 9000
+ 4274 strings out of 473190
+ 67294 string characters out of 5715801
+ 479755 words of memory out of 5000000
+ 27485 multiletter control sequences out of 15000+600000
+ 598592 words of font info for 111 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,9n,65p,769b,286s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on reporte.pdf (3 pages, 414251 bytes).
+ 57i,9n,65p,851b,288s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on reporte.pdf (5 pages, 429170 bytes).
 PDF statistics:
- 82 PDF objects out of 1000 (max. 8388607)
- 46 compressed objects within 1 object stream
+ 93 PDF objects out of 1000 (max. 8388607)
+ 53 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -7,18 +7,20 @@
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{xcolor}
+% Mostrar el encabezado de la bibliografía en español
+\renewcommand{\refname}{Referencias}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
 
 \title{Clasificación de Tumores Mamarios Benignos y Malignos\\
 {\footnotesize mediante Algoritmos de Aprendizaje Automático}
-\thanks{Práctica 1 - Redes Neuronales y Aprendizaje Automático}
+\thanks{Práctica 1 - Redes Neurales}
 }
 
-\author{\IEEEauthorblockN{Estudiante}
-\IEEEauthorblockA{\textit{Escuela de Ingeniería} \\
-\textit{Universidad Autónoma de Baja California}\\
+\author{\IEEEauthorblockN{Hector Espinzoza, Jessica Arvizu}
+\IEEEauthorblockA{\textit{Facultad de Ingeniería} \\
+\textit{UABC}\\
 Mexicali, México}
 }
 
@@ -111,12 +113,21 @@ donde $n_c$ es el número de muestras en la clase $c$, $m_{c,i}$ es la media de 
 Se utilizó validación cruzada tipo hold-out con 80\% de los datos para entrenamiento y 20\% para prueba, utilizando una semilla aleatoria fija (random\_state=42) para reproducibilidad.
 
 \subsection{Entrenamiento de Modelos}
-Se entrenaron tres modelos de aprendizaje automático:
+Se entrenaron y ajustaron tres modelos de aprendizaje automático representativos. A continuación se describe de forma detallada la metodología de entrenamiento, las decisiones de diseño y el proceso de ajuste de hiperparámetros aplicado para cada clasificador.
+
+
+Para cada clase de modelo se aplicaron las siguientes consideraciones técnicas:
 \begin{enumerate}
-\item Regresión Logística (sklearn.linear\_model.LogisticRegression)
-\item Random Forest con 100 estimadores (sklearn.ensemble.RandomForestClassifier)
-\item Máquinas de Vectores de Soporte con kernel lineal (sklearn.svm.SVC)
+\item \textbf{Regresión Logística:} se utilizó como clasificador lineal de referencia. Dado que la Regresión Logística optimiza una función de pérdida convexa con regularización, se exploraron distintos valores del parámetro de penalización \texttt{C} (inverso de la fuerza de regularización) para balancear sesgo y varianza. Se empleó regularización L2 por su estabilidad numérica y se probó el solver \texttt{liblinear} o \texttt{lbfgs} según convergencia y tamaño del subconjunto de entrenamiento. Además, se consideró la opción \texttt{class\_weight='balanced'} en búsquedas exploratorias para evaluar su efecto frente a un posible desbalance de clases.
+
+\item \textbf{Random Forest (100 estimadores):} se entrenó un ensamblado de 100 árboles de decisión construidos por muestreo bootstrap. Para reducir la varianza y evitar sobreajuste se exploraron los hiperparámetros \texttt{max\_depth}, \texttt{min\_samples\_leaf} y \texttt{max\_features}. Se monitorizó la importancia de características (feature importances) proporcionada por el modelo para interpretar qué variables aportaban mayor poder discriminativo. Cuando fue útil, se activó \texttt{oob\_score} (out-of-bag) como estimador interno de generalización durante la búsqueda de hiperparámetros.
+
+\item \textbf{Máquinas de Vectores de Soporte (SVM) -- kernel lineal:} debido a la naturaleza geométrica de SVM, se empleó una versión lineal (kernel lineal) después de estandarizar las características. El parámetro clave ajustado fue la penalización \texttt{C}, controlando la tolerancia ante errores de clasificación versus ancho del margen. Para obtener estimaciones probabilísticas (necesarias en algunos análisis posteriores) se aplicó calibración de probabilidades (por ejemplo, Platt scaling) cuando se requirió. Se tuvo en cuenta la complejidad computacional de SVM al escalar con el número de muestras y características; por ello, su ajuste se realizó sobre una rejilla razonablemente acotada.
 \end{enumerate}
+
+Adicionalmente, se tomaron medidas para garantizar la reproducibilidad y robustez del experimento: fijado de semillas aleatorias (\texttt{random\_state}), uso de particionado estratificado en validación para mantener la proporción de clases, y registro de las métricas intermedias durante las búsquedas de hiperparámetros. La selección del modelo final no se basó únicamente en la exactitud, sino en un balance entre sensibilidad (importante para minimizar falsos negativos en contexto médico) y precisión/especificidad para reducir falsos positivos.
+
+Finalmente, los modelos seleccionados se evaluaron en el conjunto de prueba y se documentaron las métricas clave (exactitud, precisión, sensibilidad y especificidad), así como las matrices de confusión y las visualizaciones correspondientes que se muestran en la sección de Resultados.
 
 \subsection{Visualización}
 Se generaron las siguientes visualizaciones:
@@ -133,7 +144,7 @@ Se generaron las siguientes visualizaciones:
 
 Los tres algoritmos fueron evaluados utilizando las métricas de exactitud, precisión, sensibilidad y especificidad. Los resultados se presentan en la Tabla \ref{tab:metrics}.
 
-\begin{table}[htbp]
+\begin{table*}[htbp]
 \caption{Métricas de Desempeño de los Modelos}
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|}
@@ -149,7 +160,7 @@ SVM (Linear) & 0.9561 & 0.9318 & 0.9535 & 0.9577 \\
 \end{tabular}
 \label{tab:metrics}
 \end{center}
-\end{table}
+\end{table*}
 
 \subsection{Visualización de Características}
 Las características más y menos relevantes según el Fisher Score fueron identificadas para analizar el poder discriminativo de las variables (se muestran listas con las 4 mejores y las 4 peores características).
@@ -184,11 +195,11 @@ Mediante el análisis de componentes principales (PCA), los datos fueron proyect
 
 Las matrices de confusión para cada modelo muestran el desempeño en términos de verdaderos positivos, verdaderos negativos, falsos positivos y falsos negativos. Random Forest mostró el mejor equilibrio con la menor cantidad de clasificaciones erróneas.
 
-\begin{figure}[htbp]
+\begin{figure*}[htbp]
 \centerline{\includegraphics[width=\linewidth]{images/confusion.png}}
 \caption{Matrices de confusión para los tres modelos evaluados.}
 \label{fig:confusion}
-\end{figure}
+\end{figure*}
 
 \subsection{Comparación de Modelos}
 
@@ -199,11 +210,11 @@ El gráfico de barras comparativo reveló que:
 \item Los tres modelos mantienen un buen equilibrio entre sensibilidad y especificidad, lo que es importante en aplicaciones médicas
 \end{enumerate}
 
-\begin{figure}[htbp]
+\begin{figure*}[htbp]
 \centerline{\includegraphics[width=\linewidth]{images/metrics.png}}
 \caption{Comparación de métricas de desempeño entre los tres algoritmos.}
 \label{fig:metrics}
-\end{figure}
+\end{figure*}
 
 \section{Conclusión}
 
@@ -220,11 +231,9 @@ Los resultados demuestran que:
 
 Para trabajos futuros, se podría explorar: validación cruzada k-fold para evaluaciones más robustas, optimización de hiperparámetros mediante búsqueda en grilla, y el uso de técnicas de balanceo de clases si el desbalance fuese un problema.
 
-\section*{Acknowledgment}
+\section*{Agradecimientos}
 
 Se agradece al conjunto de datos Breast Cancer Wisconsin, disponible en el repositorio UCI Machine Learning, por proporcionar datos de calidad para este estudio.
-
-\section*{Referencias}
 
 \begin{thebibliography}{00}
 \bibitem{b1} T. M. Mitchell, \textit{Machine Learning}, McGraw-Hill, 1997.
